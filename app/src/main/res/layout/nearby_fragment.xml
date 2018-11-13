@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.am.trendo.ui.home.nearby.NearbyViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.nearby.NearbyFragment">
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="@{viewModel.isLoading?View.INVISIBLE:View.VISIBLE}"
+            android:id="@+id/sales_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            tools:text="ERROR MSG"
+            android:visibility="@{viewModel.isError?View.VISIBLE:View.INVISIBLE}"
+            android:text="@{viewModel.errorMsg}"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:visibility="@{viewModel.isLoading?View.VISIBLE:View.INVISIBLE}"
+            android:id="@+id/loading_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</layout>

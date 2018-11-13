@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "599224130654",
+    "firebase_url": "https://trendo-8df66.firebaseio.com",
+    "project_id": "trendo-8df66",
+    "storage_bucket": "trendo-8df66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599224130654:android:79a768f6c7d038bc",
+        "android_client_info": {
+          "package_name": "com.am.trendo.free"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599224130654-jhamblh8ufdmf74nvhpao71pnc5r4hs1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz9cZyPV7t9q875e0pUUA83i_HwLiozOs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
